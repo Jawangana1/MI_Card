@@ -16,20 +16,19 @@ class MyApp extends StatelessWidget {
               Center(
                 child: Container(
                   height: 250,
-                  
                   color: Colors.teal,
                   child: CircleAvatar(
-                      radius: 50.0,
-                      backgroundImage: AssetImage('assets/images/diamond.png'),),
+                    radius: 50.0,
+                    backgroundImage: AssetImage('assets/images/diamond.png'),
+                  ),
                 ),
               ),
               SizedBox(
-                
                 height: 50,
-                child: Text("Rajveer Rall", style: TextStyle(
-                  fontFamily: 'SourceSansPro',
-                  fontSize: 40
-                ),),
+                child: Text(
+                  "Kushi ba",
+                  style: TextStyle(fontFamily: 'SourceSansPro', fontSize: 40),
+                ),
               ),
               SizedBox(
                 height: 60,
@@ -42,23 +41,57 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                padding: EdgeInsets.all(5.0),
                 color: Colors.white,
-                width: 200,
-                height: 30,
-                child: Text(
-                  "Rallrajveer@gmail.com",
-                  textAlign: TextAlign.center,
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.symmetric(vertical: 5.0, horizontal: 30 ),
+                child: Row(
                   
+                  children: [
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal[900],
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      "rallrajveer@gmail.com",
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                          color: Colors.teal[900]),
+                    ),
+                  ],
                 ),
               ),
-              
+              SizedBox(
+                height: 20,
+              ),
               Container(
-                padding: EdgeInsets.all(5.0),
                 color: Colors.white,
-                width: 200,
-                height: 30,
-                child: Text("+91 7087743074", textAlign: TextAlign.center),
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30 ),
+                child: Row(
+                  
+                  
+                  children: [
+                    
+                    Icon(
+                      Icons.phone,
+                      color: Colors.teal[900],
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      "+91 7087743074",
+                      style: TextStyle(
+                          fontFamily: 'SourceSansPro',
+                          fontSize: 20,
+                          color: Colors.teal[900]),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
